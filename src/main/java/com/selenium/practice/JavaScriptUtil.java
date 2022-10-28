@@ -84,6 +84,11 @@ public class JavaScriptUtil {
 		js.executeScript("arguments[0].style.border='3px solid red'", element);
 	}
 	
+	
+	/*
+	 * Custom Wait For Page Loading
+	 */
+	
 	public void waitForPageLoaded() {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		String loadingStatus = js.executeScript("return document.readyState;").toString();
